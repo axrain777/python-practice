@@ -1,4 +1,4 @@
-Python Practice
+Python Practice1
 This repository contains my Python learning projects and exercises.
 
 Current Topics 
