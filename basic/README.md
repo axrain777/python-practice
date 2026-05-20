@@ -1,7 +1,7 @@
 Python Practice
 This repository contains my Python learning projects and exercises.
 
-Current Topics
+Current Topics 
 Variables
 Loops
 Functions
