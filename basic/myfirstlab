@@ -1,1 +1,37 @@
+#Variables and Assignments
+#assign 42 to x
+x = 42
+
+#display value of x
+x
+
+#use one variable to set value of another
+y=x
+#y contain value of x now and will display 42 as well
+y
+
+#different types of variable, 42 is integers and characters("Alice") are string
+name = "Alice"
+name
+
+#print() function, print display the value that are inside ()
+print("Hello there!")
+
+#print 42
+x = 42
+print(x)
+result: 42
+
+#combine text and variables in a single print statement
+name = "Alice"
+print("My name is" ,name )
+result: My name is Alice
+
+#Using the input() Function, this function will get input from the user
+#system will prompt What is your name?
+name = input("What is your name? ")
+
+#print a greeting using the name user input
+print("Hello", name)  
+result: Hello, name(which ever name you type)
 
