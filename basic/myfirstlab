@@ -36,3 +36,14 @@ print("Hello", name)
 #refer to screenshot #1 in readme.md for result
 result: Hello, name(which ever name you type)
 
+#input always returns a string so if we want a number result we must convert into int() for integers or float() for decimal numbers.
+#input returns a string
+age_str = input("How old are you? ")
+
+#convert string to integer
+age = int(age_str)
+
+#print age + 1 to test whether value has changed to integers.
+#refer to screenshot #2 for result
+print("Next year, you will be", age + 1)
+
