@@ -7,3 +7,7 @@ This is my beginner Python practice project.
 screenshot #1
 
 ![Screenshot](inputname.png)
+
+screenshot #2
+
+![Screenshot](ss2.png)
