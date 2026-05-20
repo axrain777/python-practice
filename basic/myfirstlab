@@ -33,6 +33,6 @@ name = input("What is your name? ")
 
 #print a greeting using the name user input
 print("Hello", name)  
-#refer to screenshot #1 for result
+#refer to screenshot #1 in readme.md for result
 result: Hello, name(which ever name you type)
 
