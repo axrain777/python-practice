@@ -5,9 +5,12 @@
 -Detect collisions in a game
 -Display and update the game score
 
-##Create a new file named snake_game.py
+#Create a new file named snake_game.py
+
+#creating a blank file named snake_game.py
 touch snake_game.py
-##creating a blank file named snake_game.py
+
+#install pygame(pre-written code)
 sudo pip install pygame
-##install pygame(pre-written code)
+
 
