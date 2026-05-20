@@ -1,4 +1,4 @@
-#keys
+#ReadMe
 -Use Pygame to create a graphical game window
 -Handle user input to control the game
 -Create and update game objects
