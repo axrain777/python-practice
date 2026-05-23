@@ -58,4 +58,39 @@ for num in numbers:
     else:
         print(f"{num} is odd")
 
-  
+##Exploring While Loop
+#simple while loop,repeat code as long as condition is true
+count = 0
+#refer to screenshot pss27 in readme.md for result
+while count < 5:
+    print(count)
+    count += 1
+
+#a simple game to use while loop because while loop is usually used when we dont know in advance how many times we need to iterate.
+#import random toolbox
+import random
+
+set number to a random number from 1-10
+number = random.randint(1, 10)
+guess = 0
+#refer to screenshot pss28 in readme.md for result
+while guess != number:
+    guess = int(input("Guess a number between 1 and 10: "))
+    if guess < number:
+        print("Too low!")
+    elif guess > number:
+        print("Too high!")
+    else:
+        print(f"Congratulations! You guessed the number {number}!")
+
+##Nested Loops and Loop Control Statements
+#Nested Loops,nested loop is like the hands of a clock: the outer loop is like the hour hand, and the inner loop is like the minute hand.
+#Nested Loops is useful and navigating between two dimensioal datas.
+for i in range(3):
+    for j in range(2):
+        #refer to screenshot pss29 in readme.md for result
+        print(f"i: {i}, j: {j}")
+
+
+
+    
