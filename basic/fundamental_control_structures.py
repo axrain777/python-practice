@@ -95,6 +95,7 @@ for i in range(3):
 touch ~/project/number_analyzer.py
 
 #create a function so that we can reuse it by prompting the function instead of typing the old code again and again.
+#refer to screenshot pss30 in readme.md for result
 def analyze_numbers():
     numbers = []
     #creates an "infinite loop" that keeps asking the user for numbers until they explicitly tell it to stop
@@ -137,4 +138,12 @@ def analyze_numbers():
 if __name__ == "__main__":
     analyze_numbers()
 
-    
+#Create a Rocket Launch Countdown program
+# Use a for loop with range to create the countdown,range(start,end(not included),step)
+for i in range(10, -1, -1):
+    print(i)
+
+# After the loop completes, print "Liftoff!"
+#refer to screenshot pss31 in readme.md for result
+print("Liftoff!")
+
