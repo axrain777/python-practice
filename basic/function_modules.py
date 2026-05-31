@@ -109,3 +109,89 @@ print(f"Subtraction: {result_subtract}")
 print(f"Multiplication: {result_multiply}")
 print(f"Division: {result_divide}")
 print(f"Value of PI: {math_operations.PI}")
+
+##Importing Specific Functions from Modules
+#creating new file which i will use for importing the function
+touch ~/project/advanced_math.py
+
+#import module and the built in function 
+# advanced_math.py
+
+import math
+
+def square_root(x):
+      return math.sqrt(x)
+
+def power(base, exponent):
+      return math.pow(base, exponent)
+
+def sin(angle):
+      return math.sin(math.radians(angle))
+
+def cos(angle):
+      return math.cos(math.radians(angle))
+
+#create a file to execute the function
+touch ~/project/use_advanced_math.py
+
+# use_advanced_math.py
+# i use aliases for sin and cos by giving it another variable name.by using aliases 
+it makes my code more readable and avoid naming conflicts between different modules.
+
+from advanced_math import square_root, power
+from advanced_math import sin as sine, cos as cosine
+
+x = 16
+y = 2
+angle = 30
+
+print(f"Square root of {x}: {square_root(x)}")
+print(f"{x} to the power of {y}: {power(x, y)}")
+print(f"Sine of {angle} degrees: {sine(angle)}")
+print(f"Cosine of {angle} degrees: {cosine(angle)}")
+
+#running the function
+#refer to screenshot pss39 in readme.md for result
+python ~/project/use_advanced_math.py
+
+##creating a package, this is a way to organize related modules into a directory hierarchy.
+#create a new directory
+mkdir ~/project/geometry
+
+#create files inside the directory
+touch ~/project/geometry/__init__.py
+touch ~/project/geometry/shapes.py
+
+#import module and create function in shapes.py
+# geometry/shapes.py
+
+import math
+
+def circle_area(radius):
+      return math.pi * radius ** 2
+
+def rectangle_area(length, width):
+      return length * width
+
+def triangle_area(base, height):
+      return 0.5 * base * height
+
+#create a file to execute the new function
+touch ~/project/use_geometry_package.py
+# use_geometry_package.py
+
+from geometry.shapes import circle_area, rectangle_area, triangle_area
+
+radius = 5
+length = 4
+width = 6
+base = 3
+height = 8
+
+print(f"Area of circle with radius {radius}: {circle_area(radius):.2f}")
+print(f"Area of rectangle with length {length} and width {width}: {rectangle_area(length, width)}")
+print(f"Area of triangle with base {base} and height {height}: {triangle_area(base, height)}")
+
+#excute the function
+#refer to screenshot pss40 in readme.md for result
+python ~/project/use_geometry_package.py
