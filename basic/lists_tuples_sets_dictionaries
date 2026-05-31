@@ -1,2 +1,17 @@
 ##in this repo i will be learning how to create, manipulate, and utilize these versatile data structures
+#creating list
+#refer to screenshot pss41 in readme.md for result
+fruits = ["apple", "banana", "cherry"]
+print(fruits)
+
+#view first item in the list
+print(fruits[0])
+
+#view last item in the list
+print(fruits[-1])
+
+#replace item in the list
+fruits[1] = "blueberry"
+#refer to screenshot pss42 in readme.md for result
+print(fruits)
 
