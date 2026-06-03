@@ -15,3 +15,69 @@ fruits[1] = "blueberry"
 #refer to screenshot pss42 in readme.md for result
 print(fruits)
 
+#adding item into list
+fruits.append("date")
+
+#refer to screenshot pss43 in readme.md for result
+print(fruits)
+
+#if i want to add item to specific position then i can use "insert"
+fruits.insert(1, "banana")
+
+#refer to screenshot pss44 in readme.md for result
+print(fruits)
+
+#for removing of item , i can use either remove to remove the name of the item or del to remove item at specific position
+fruits.remove("cherry")
+print(fruits)
+
+del fruits[0]
+print(fruits)
+
+##exploring tuples, tuples are just like list but you cant change the content after you create them. its good for creating content that 
+you dont want anyone to have access to change anything.
+#create tuple
+coordinates = (3, 4)
+print(coordinates)
+
+#tuple can contain items of different types, for example the following.
+person = ("Alice", 25, "Engineer")
+name, age, occupation = person  # Tuple unpacking, use for assign multiple variables at one go
+#refer to screenshot pss45 in readme.md for result
+print(f"{name} is {age} years old and works as an {occupation}.")
+
+#tuple is often used for returning mutiple values from a function
+def get_dimensions():
+    return (1920, 1080)
+
+width, height = get_dimensions()
+#refer to screenshot pss46 in readme.md for result
+print(f"Width: {width}, Height: {height}")
+
+##exploring sets, main difference compared to list and tuples are sets automatically remove duplicate elements 
+and also sets dont have indexing so it means you cant print item from specific position because there's no first item.
+in addition each time we print the sets, the result of the order might change due to how sets work so if i want something thats
+of specific order then sets are not suitable.
+numbers = {1, 2, 2, 3, 3, 4}
+#refer to screenshot pss47 in readme.md for result
+print(numbers)
+
+#adding and removing item in sets
+fruits.add("date")
+fruits.remove("banana")
+
+#Sets also support mathematical set operations like union, intersection, and difference
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+print(set1.union(set2))  # Union, only print 3 once because its duplicated.
+
+#intersection, it compares both sets and print the value thats identical in both sets in this case "3".
+It is a powerful way to quickly find overlaps between two groups of data.
+print(set1.intersection(set2))  
+
+#difference. this compares the two sets and tell you which items appear in the first set but didnt appear in the second set in this case "1" and
+"2" is the answer 
+print(set1.difference(set2))  
+
+#if i want to search an element in the set, i can use "in". it will print either true or false, a boolean
+print("apple" in fruits)
